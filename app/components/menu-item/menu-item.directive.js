@@ -5,13 +5,18 @@ angular.
   directive('menuItem', function() {
     return {
       templateUrl: 'components/menu-item/menu-item.template.html',
-      replace: true,
+      // replace: true,
       restrict: 'E',
       scope: {
         text: '@',
         helperText: '@'
       },
       controller: ['$scope', function($scope, $element, $attrs) {
+        
+        // Seen in Material Design's execution
+        // The sample action function is defined in the directive controller
+        // it needs the click event and the title of the text...why?
+        // ng-click="ctr.sampleAction(item.text, $event)"
         
         // trying out selection action pattern
         $scope.selected = function($event, scope) {
@@ -30,3 +35,6 @@ angular.
       }
     }
   });
+  
+  // route to different template per type setting
+  // 

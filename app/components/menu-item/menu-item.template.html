@@ -1,1 +1,21 @@
-<button class="menu-button">{{ text }} </button>
+<style>
+
+  .menu-button {
+    background-color: #FFFFFF;
+    /*height: 30px;*/
+    padding: 6px;
+    border: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  menu-item:hover .menu-button {
+    background-color: lightgray;
+  }
+</style>
+
+<button class="menu-button" ng-click="ctr.sampleAction(item.text, $event)">
+  <span>{{ text }}</span>
+  <span>{{ helperText }}</span>
+</button>
