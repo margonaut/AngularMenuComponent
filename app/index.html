@@ -21,7 +21,7 @@
   <my-button ng-repeat="item in menu.items" options="item"></my-button>
   <hr />
   
-  <menu-item ng-repeat="item in menu.menuTwo" text="item.text" helper-text="item.helperText"></menu-item>
+  <menu-item ng-repeat="item in menu.menuTwo" text="{{ item.text }}" helper-text="{{ item.helperText }}"></menu-item>
 </div>
 
   <!-- In production use:
