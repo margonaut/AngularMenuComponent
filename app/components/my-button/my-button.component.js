@@ -1,19 +1,19 @@
 'use strict';
 
 angular.
-  module('woof').
-  directive('woof', function() {
+  module('myButton').
+  directive('myButton', function() {
     return {
       restrict: 'E',
       transclude: true,
       scope: {
-        info: '=info'
+        options: '=options'
       },
       controller: ['$scope', function($scope) {
         var help = "help";
         this.what = "Hello world";
-        $scope.message = "lolz";
+        // $scope.message = "lolz";
       }],
-      templateUrl: 'components/woof/woof.template.html'
+      templateUrl: 'components/my-button/my-button.template.html'
     }
   });
