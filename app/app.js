@@ -31,7 +31,11 @@ app.controller('MenuController', ['$scope', function($scope) {
   
   this.boldText = function(event) {
     alert("This makes text bold");
-  }
+  };
+  
+  this.genericAction = function() {
+    alert("Generic Action to the rescue!")
+  };
   
   this.items = [
     {

@@ -24,6 +24,8 @@
   <!-- <menu-item ng-repeat="item in menu.menuTwo" text="{{ item.text }}" helper-text="{{ item.helperText }}"></menu-item> -->
   <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
   <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
+  <menu-item text="Save" ng-click="menu.genericAction()"></menu-item>
+  <menu-item text="Turn On" type="checkbox"></menu-item>
 </div>
 
   <!-- In production use:

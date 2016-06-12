@@ -17,5 +17,5 @@
 
 <button class="menu-button" ng-click="ctr.sampleAction(item.text, $event)">
   <span>{{ text }}</span>
-  <span>{{ helperText }}</span>
+  <span ng-if="helperText">{{ helperText }}</span>
 </button>
