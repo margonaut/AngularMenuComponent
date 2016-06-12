@@ -7,13 +7,15 @@ angular.
       restrict: 'E',
       transclude: true,
       scope: {
-        options: '=options'
+        options: '=options',
+        buttonAction: '=action'
       },
       controller: ['$scope', function($scope) {
-        var help = "help";
-        this.what = "Hello world";
+        // $scope.help = "helpmeeee"; works with {{ help }}
+        // this.what = "Hello world"; works with {{ ctrl.what }}
         // $scope.message = "lolz";
       }],
+      controllerAs: 'ctrl',
       templateUrl: 'components/my-button/my-button.template.html'
     }
   });

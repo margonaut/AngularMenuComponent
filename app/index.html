@@ -16,10 +16,8 @@
 </head>
 <body>
 
-<div style="width: 200px; background-color: lightgray;">
-  <my-button options="{text: 'Do the thing', helptext: 'Cmd + P'}"></my-button>
-  <my-button options="{text: 'Other thing'}"></my-button>
-  <my-button options="{text: 'Other thing', helptext: 'Cmd + Q'}"></my-button>
+<div style="width: 200px;" ng-controller="MenuController as menu">
+  <my-button ng-repeat="item in menu.items" options="item"></my-button>
 </div>
 
   <!-- In production use:
@@ -33,6 +31,8 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <!-- <script src="menu1.controller.js"></script> -->
+  <!-- <script src="menu.controller.js"></script> -->
   <script src="components/my-button/my-button.module.js"></script>
   <script src="components/my-button/my-button.component.js"></script>
 </body>

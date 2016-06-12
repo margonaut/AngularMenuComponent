@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var app = angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
@@ -12,4 +12,22 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/view1'});
+}]);
+
+app.controller('MenuController', ['$scope', function($scope) {
+  this.items = [
+    {
+      text: 'Thing One',
+      helpText: 'Cmd+P'
+    },
+    {
+      text: 'Thing Two'
+    },
+    {
+      text: 'Threee',
+      helpText: 'Cmd+Q'
+    },
+  ]
+  
+
 }]);
