@@ -5,7 +5,7 @@ angular.
   directive('myButton', function() {
     return {
       restrict: 'E',
-      transclude: true,
+      // transclude: true,
       scope: {
         options: '=options'
       },
