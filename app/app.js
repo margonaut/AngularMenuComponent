@@ -29,5 +29,7 @@ app.controller('MenuController', ['$scope', function($scope) {
     },
   ]
   
-
+  this.myAction = function() {
+    alert('wooo!');
+  }
 }]);
