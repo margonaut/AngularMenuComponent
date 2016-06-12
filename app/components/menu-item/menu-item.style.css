@@ -1,0 +1,13 @@
+.menu-button {
+  background-color: #FFFFFF;
+  /*height: 30px;*/
+  padding: 6px;
+  border: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+menu-item:hover .menu-button {
+  background-color: lightgray;
+}
