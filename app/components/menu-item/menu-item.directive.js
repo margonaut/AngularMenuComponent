@@ -5,16 +5,17 @@ angular.
   directive('menuItem', function() {
     return {
       templateUrl: 'components/menu-item/menu-item.template.html',
-      // replace: true,
+      replace: true,
       restrict: 'E',
       scope: {
         text: '@',
-        url: '@'
+        helperText: '@'
       },
       controller: ['$scope', function($scope, $element, $attrs) {
         
         // trying out selection action pattern
         $scope.selected = function($event, scope) {
+          // On click trigger this selection function
           
           $scope.emit('menu-item-selected', scope);
           
@@ -25,6 +26,7 @@ angular.
       link: function(scope, iElement, iAttrs) {
         
         // this is where the pattern sets menu items to be disabled
+        // I might not want that functionality
       }
     }
   });

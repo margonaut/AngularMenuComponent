@@ -14,6 +14,16 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 }]);
 
 app.controller('MenuController', ['$scope', function($scope) {
+  this.menuTwo = [
+    {
+      text: "Trying it again",
+      helperText: "Cmd+P"
+    },
+    {
+      text: "Second time",
+      helperText: "Cmd+D"
+    }
+  ]
   this.items = [
     {
       text: 'Thing One',
