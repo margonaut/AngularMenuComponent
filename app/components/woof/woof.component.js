@@ -5,9 +5,14 @@ angular.
   directive('woof', function() {
     return {
       restrict: 'E',
-      scope: {},
+      transclude: true,
+      scope: {
+        info: '=info'
+      },
       controller: ['$scope', function($scope) {
-        this.message = "Hello world"
+        var help = "help";
+        this.what = "Hello world";
+        $scope.message = "lolz";
       }],
       templateUrl: 'components/woof/woof.template.html'
     }
