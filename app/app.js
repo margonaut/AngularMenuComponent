@@ -23,7 +23,16 @@ app.controller('MenuController', ['$scope', function($scope) {
       text: "Second time",
       helperText: "Cmd+D"
     }
-  ]
+  ];
+  
+  this.printPage = function(event) {
+    alert("This is the print event");
+  };
+  
+  this.boldText = function(event) {
+    alert("This makes text bold");
+  }
+  
   this.items = [
     {
       text: 'Thing One',

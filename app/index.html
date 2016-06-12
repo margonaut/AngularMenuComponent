@@ -21,7 +21,9 @@
   <my-button ng-repeat="item in menu.items" options="item"></my-button>
   <hr />
   
-  <menu-item ng-repeat="item in menu.menuTwo" text="{{ item.text }}" helper-text="{{ item.helperText }}"></menu-item>
+  <!-- <menu-item ng-repeat="item in menu.menuTwo" text="{{ item.text }}" helper-text="{{ item.helperText }}"></menu-item> -->
+  <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+  <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
 </div>
 
   <!-- In production use:
