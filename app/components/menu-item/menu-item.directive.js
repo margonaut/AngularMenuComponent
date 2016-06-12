@@ -4,13 +4,18 @@ angular.
   module('menuItem').
   directive('menuItem', function() {
     return {
-      templateUrl: 'components/menu-item/menu-item.template.html',
       // replace: true,
       restrict: 'E',
       scope: {
         text: '@',
-        helperText: '@'
+        helperText: '@',
+        type: '@'
       },
+      templateUrl: function(elem, attrs) {
+        var itemType = attrs.type;
+        var baseUrl = 'components/menu-item/menu-item.';
+        return itemType ? baseUrl + itemType + '-' + 'template.html' : baseUrl + 'template.html'
+       },
       controller: ['$scope', function($scope, $element, $attrs) {
         
         // Seen in Material Design's execution
