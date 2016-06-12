@@ -37,9 +37,4 @@ app.controller('MenuController', ['$scope', function($scope) {
       }
     },
   ]
-  
-  $scope.myAction = function(msg) {
-    // debugger;
-    msg();
-  }
 }]);

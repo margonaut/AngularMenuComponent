@@ -7,8 +7,7 @@ angular.
       restrict: 'E',
       transclude: true,
       scope: {
-        options: '=options',
-        myAction: '&'
+        options: '=options'
       },
       controller: ['$scope', function($scope) {
         // $scope.help = "helpmeeee"; works with {{ help }}
