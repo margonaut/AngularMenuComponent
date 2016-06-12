@@ -17,7 +17,7 @@
 <body>
 
 <div style="width: 200px;" ng-controller="MenuController as menu">
-  <my-button ng-repeat="item in menu.items" options="item" my-action="menu.myAction()"></my-button>
+  <my-button ng-repeat="item in menu.items" options="item" my-action="myAction(item.action)"></my-button>
 </div>
 
   <!-- In production use:

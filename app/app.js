@@ -18,18 +18,28 @@ app.controller('MenuController', ['$scope', function($scope) {
   this.items = [
     {
       text: 'Thing One',
-      helpText: 'Cmd+P'
+      helpText: 'Cmd+P',
+      action: function() {
+        alert('Contact');
+      }
     },
     {
-      text: 'Thing Two'
+      text: 'Thing Two',
+      action: function() {
+        alert('This is thing two\'s action');
+      }
     },
     {
       text: 'Threee',
-      helpText: 'Cmd+Q'
+      helpText: 'Cmd+Q',
+      action: function() {
+        alert('Thing three is here');
+      }
     },
   ]
   
-  this.myAction = function() {
-    alert('wooo!');
+  $scope.myAction = function(msg) {
+    // debugger;
+    msg();
   }
 }]);
