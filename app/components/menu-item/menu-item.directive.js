@@ -5,7 +5,7 @@ angular.
   directive('menuItem', function() {
     return {
       templateUrl: 'components/menu-item/menu-item.template.html',
-      replace: true,
+      // replace: true,
       restrict: 'E',
       scope: {
         text: '@',
