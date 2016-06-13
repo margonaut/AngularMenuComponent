@@ -2,6 +2,13 @@ menu-item {
   position: relative;
 }
 
+.menu-item__icon {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  padding-left: 12px;
+}
+
 .menu-button {
   background-color: #FFFFFF;
   height: 35px;
@@ -12,17 +19,10 @@ menu-item {
   justify-content: space-between;
 }
 
-.menu-item__icon {
-  position: absolute;
-  z-index: 10;
-  top: 5px;
-  padding-left: 12px;
+menu-item:hover .menu-button {
+  background-color: lightgray;
 }
 
 .menu-button.indented {
   padding-left: 44px;
-}
-
-menu-item:hover .menu-button {
-  background-color: lightgray;
 }
