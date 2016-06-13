@@ -19,6 +19,10 @@ menu-item {
   justify-content: space-between;
 }
 
+.menu-button:focus {
+  outline: 0;
+}
+
 menu-item:hover .menu-button {
   background-color: lightgray;
 }
