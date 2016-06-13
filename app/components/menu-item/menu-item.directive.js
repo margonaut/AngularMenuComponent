@@ -19,8 +19,6 @@ angular.
        },
       controller: ['$scope', function($scope, $element, $attrs) {
         
-
-        
         // trying out selection action pattern
         $scope.selected = function($event, scope) {
           // On click trigger this selection function

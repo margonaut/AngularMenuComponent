@@ -1,7 +1,11 @@
 mem-menu-content {
-  display: block;
+  display: none;
   border: 1px solid #DADADA;
   width: 300px;
   box-shadow: 0px 1px 2px 0px #D6D6D6;
   padding: 10px 0px;
+}
+
+mem-menu-content.menu-open {
+  display:block;
 }
