@@ -43,14 +43,8 @@ module.exports = function(config) {
     ngHtml2JsPreprocessor: {
       
       stripPrefix: 'app/',
-      // prependPrefix: '/',
-      // moduleName: 'templates'
-        // If your build process changes the path to your templates,
-        // use stripPrefix and prependPrefix to adjust it.
-        // stripPrefix: "source/path/to/templates/.*/",
-        // prependPrefix: "web/path/to/templates/",
-
-        // the name of the Angular module to create
+      
+        // create module to access template files
         moduleName: "templates"
     },
 

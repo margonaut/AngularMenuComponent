@@ -49,27 +49,4 @@ describe('menuItem directive', function() {
       
     });
   });
-  
-  // // Insert our HTML and compile the directive
-  // function CompileDirective(directiveHtml) {
-  //   if(!directiveHtml) directiveHtml = testItem;
-  //   inject(function($compile) {
-  //     $element = $compile(directiveHtml)($scope);
-  //     $scope.$digest();
-  //     element = $element.html();
-  //   })
-  // }
-  
-  // describe('menuItem', function() {
-  //   // var scope;
-  //   beforeEach(function() {
-  //     
-  //     // scope = $element.data('$scope').$$childHead;
-  //     // $event = $.Event("click");
-  //   });
-  //   
-  //   it('should display the text attribute', function() {
-  //     expect(element).toContain("Bold");
-  //   })
-  // })
 });
