@@ -5,7 +5,8 @@ var app = angular.module('myApp', [
   'ngRoute',
   'myApp.version',
   'myButton',
-  'menuItem'
+  'menuItem',
+  'memMenu'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
