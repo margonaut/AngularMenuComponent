@@ -19,6 +19,7 @@ menu-item {
   justify-content: space-between;
 }
 
+
 .menu-button:focus {
   outline: 0;
 }
@@ -31,3 +32,25 @@ menu-item:hover .menu-button {
 menu-item.indented .menu-button {
   padding-left: 44px;
 }
+
+menu-item[disabled] {
+  color: lightgrey; 
+  cursor: default;
+  pointer-events: none; 
+}
+
+menu-item[disabled]:hover .menu-button {
+  background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+

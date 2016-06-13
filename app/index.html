@@ -24,7 +24,7 @@
   
   <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
   <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
-  <menu-item text="Save" ng-click="menu.genericAction()"></menu-item>
+  <menu-item text="Save" disabled="disabled" ng-click="disabled=true || menu.genericAction()"></menu-item>
   <menu-item text="Turn On" type="checkbox" ng-click="menu.checkboxAlert()"></menu-item>
   <menu-item text="Sync Files" helper-text="Ctrl+R" icon="autorenew"></menu-item>
   <menu-item text="Sync Files" class="indented" ></menu-item>
