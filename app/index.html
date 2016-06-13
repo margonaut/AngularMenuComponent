@@ -21,7 +21,7 @@
 <body>
 
 <div ng-controller="MenuController as menu">
-  
+  <!-- 
   <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
   <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
   <menu-item text="Save" disabled="disabled" ng-click="disabled=true || menu.genericAction()"></menu-item>
@@ -29,12 +29,14 @@
   <menu-item text="Sync Files" helper-text="Ctrl+R" icon="autorenew"></menu-item>
   <menu-item text="Sync Files" class="indented" ></menu-item>
   
-  <hr>
+  <hr> -->
   
+  <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
   <mem-menu>
      <button ng-click="$openMenu()">Let's Go</button>
      <mem-menu-content>
        <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
+       <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
      </mem-menu-content>
   </mem-menu>
   
