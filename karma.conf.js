@@ -13,7 +13,7 @@ module.exports = function(config) {
       '!(bower_components)/**/*!(.module|.spec).js',
       '**/*.spec.js',
       'components/**/*.js',
-      'view*/**/*.js'
+      'components/**/*.template.html'
     ],
 
     autoWatch: true,
@@ -26,13 +26,34 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-firefox-launcher',
       'karma-jasmine',
-      'karma-junit-reporter'
+      'karma-junit-reporter',
+      'karma-ng-html2js-preprocessor'
     ],
 
     junitReporter: {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
-    }
+    },
+    
+    preprocessors: {
+      // "**/*.html": ["ng-html2js"]
+      "components/menu-item/menu-item.template.html": ["ng-html2js"]
+    },
+
+    ngHtml2JsPreprocessor: {
+      
+      stripPrefix: 'app/',
+      // prependPrefix: '/',
+      // moduleName: 'templates'
+        // If your build process changes the path to your templates,
+        // use stripPrefix and prependPrefix to adjust it.
+        // stripPrefix: "source/path/to/templates/.*/",
+        // prependPrefix: "web/path/to/templates/",
+
+        // the name of the Angular module to create
+        moduleName: "templates"
+    },
+
 
   });
 };

@@ -6,6 +6,9 @@ describe('menuItem directive', function() {
   // Load the wrapper module that contains the menuItem directive
   beforeEach(module('menuItem'));
   
+  beforeEach(module('templates'));
+
+  
   beforeEach(inject(function($rootScope, $compile) {
     scope = $rootScope.$new();
     
