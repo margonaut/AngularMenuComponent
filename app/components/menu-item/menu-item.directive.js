@@ -9,7 +9,8 @@ angular.
       scope: {
         text: '@',
         helperText: '@',
-        type: '@'
+        type: '@',
+        icon: '@'
       },
       templateUrl: function(elem, attrs) {
         var itemType = attrs.type;

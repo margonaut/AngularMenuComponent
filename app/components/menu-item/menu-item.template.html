@@ -1,4 +1,5 @@
 <button class="menu-button" ng-click="ctr.sampleAction(item.text, $event)">
+  <i ng-if="icon" class="material-icons">{{ icon }}</i>
   <span>{{ text }}</span>
   <span ng-if="helperText">{{ helperText }}</span>
 </button>
