@@ -31,12 +31,13 @@
   
   <hr> -->
   
-  <mem-menu>
-     
-     <mem-menu-content>
+  <mem-menu>     
        <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
        <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-     </mem-menu-content>
+       <mem-menu>
+            <menu-item text="Test" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
+            <menu-item text="Again" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+       </mem-menu>
   </mem-menu>
   
   <hr />
