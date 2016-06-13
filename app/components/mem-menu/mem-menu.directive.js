@@ -7,16 +7,14 @@ angular.
       templateUrl: 'components/mem-menu/mem-menu.template.html',
       restrict: 'E',
       scope: {
-        itemAction: '&'
+        itemAction: '&',
+        text: '@'
       },
       transclude: true,
+        link: function(scope, element, attrs, tabsCtrl) {
+
+      },
       controller: ['$scope', function($scope, $elements, $attrs) {
-        // bad area for dom manipulation, good for sharing scope
-        
-        var test = function() {
-          debugger;
-        }
-        
         
         this.toggleMenu = function(event) {
           var menu = findMenu(event);          
