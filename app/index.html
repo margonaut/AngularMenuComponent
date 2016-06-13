@@ -9,27 +9,25 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="components/my-button/my-button.style.css">
   <link rel="stylesheet" href="components/menu-item/menu-item.style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
 <div style="width: 200px;" ng-controller="MenuController as menu">
-  <my-button ng-repeat="item in menu.items" options="item"></my-button>
-  <hr />
   
-  <!-- <menu-item ng-repeat="item in menu.menuTwo" text="{{ item.text }}" helper-text="{{ item.helperText }}"></menu-item> -->
   <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
   <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
   <menu-item text="Save" ng-click="menu.genericAction()"></menu-item>
   <menu-item text="Turn On" type="checkbox" ng-click="menu.checkboxAlert()"></menu-item>
-  <menu-item text="Sync Files" icon="autorenew"></menu-item>
+  <menu-item text="Sync Files" helper-text="Ctrl+R" icon="autorenew"></menu-item>
+  
 </div>
 
   <!-- In production use:

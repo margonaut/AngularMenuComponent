@@ -1,3 +1,7 @@
+
+menu-item {
+  position: relative;
+}
 .menu-button {
   background-color: #FFFFFF;
   /*height: 30px;*/
@@ -6,6 +10,17 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.menu-item__icon {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  padding-left: 6px;
+}
+
+.menu-button.indented {
+  padding-left: 40px;
 }
 
 menu-item:hover .menu-button {
