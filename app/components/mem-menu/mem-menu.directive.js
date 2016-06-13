@@ -15,7 +15,6 @@ angular.
           })
         };
       },
-      scope: {},
       controller: ['$scope', function($scope, $elements, $attrs) {
         
       }]

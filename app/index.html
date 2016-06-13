@@ -31,8 +31,11 @@
   
   <hr> -->
   
+  <!-- {{ menu.test }} -->
   <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+  <menu-item text="Print" helper-text="Cmd+P" item-action="menu.printPage($event)"></menu-item>
   <mem-menu>
+    {{ menu.test }}
      <button ng-click="$openMenu()">Let's Go</button>
      <mem-menu-content>
        <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
