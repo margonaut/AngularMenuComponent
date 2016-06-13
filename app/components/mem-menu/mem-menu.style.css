@@ -8,13 +8,26 @@ mem-menu-content {
   width: 300px;
   box-shadow: 0px 1px 2px 0px #D6D6D6;
   padding: 10px 0px;
+  background-color: #FFFFFF;
 }
 
 mem-menu-content.menu-open {
   display:block;
 }
 
+.trigger-button {
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+}
+
+/*.menu-bar {
+  background-color: cadetblue;
+  border: 2px solid cadetblue;
+  height: 40px;
+}*/
+
 mem-menu-content .trigger-button {
+  background: #FFFFFF;
   height: 35px;
   padding: 0px 12px;
   border: 0px;
@@ -32,13 +45,8 @@ mem-menu-content .trigger-button:hover {
   background-color: lightgray;
 }
 
-.trigger-button {
-  background: #FFFFFF;
-  border: 0px;
-}
-
 mem-menu-content mem-menu-content {
   position: absolute;
   left: 301px;
-  top: -5px;
+  top: -8px;
 }

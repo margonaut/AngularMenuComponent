@@ -30,22 +30,23 @@
   <menu-item text="Sync Files" class="indented" ></menu-item>
   
   <hr> -->
-  
-  <mem-menu text="Custom Title">     
-       <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-       <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-       <mem-menu text="Dropdown example" type="dropdown">
-            <menu-item class="indented" text="A different Option" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
-            <menu-item text="Again" icon="autorenew" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-            <menu-item class="indented" text="Again" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-       </mem-menu>
-       <mem-menu text="Dropdown example" type="dropdown">
-         <menu-item text="Issues" icon="build" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-         <menu-item text="Assign Jobs" icon="assignment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-         <menu-item text="Current Jobs" icon="event" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-         <menu-item text="Job History" icon="assessment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-       </mem-menu>
-  </mem-menu>
+  <div class="menu-bar">
+    <mem-menu text="Custom Title">     
+         <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
+         <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+         <mem-menu text="Dropdown example" type="dropdown">
+              <menu-item class="indented" text="A different Option" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
+              <menu-item text="Again" icon="autorenew" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+              <menu-item class="indented" text="Again" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+         </mem-menu>
+         <mem-menu text="Dropdown example" type="dropdown">
+           <menu-item text="Issues" icon="build" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+           <menu-item text="Assign Jobs" icon="assignment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+           <menu-item text="Current Jobs" icon="event" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+           <menu-item text="Job History" icon="assessment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+         </mem-menu>
+    </mem-menu>
+  </div>
 
   
   <!-- <hr />
