@@ -14,9 +14,23 @@ mem-menu-content.menu-open {
   display:block;
 }
 
-/*mem-menu-content .trigger-button {
-    color: red;
-}*/
+mem-menu-content .trigger-button {
+  height: 35px;
+  padding: 0px 12px;
+  border: 0px;
+  width: 100%;
+  text-align: left;
+}
+
+mem-menu-content .trigger-button:before {
+  content: ">";
+  position: absolute;
+  right: 12px;
+}
+
+mem-menu-content .trigger-button:hover {
+  background-color: lightgray;
+}
 
 .trigger-button {
   background: #FFFFFF;
