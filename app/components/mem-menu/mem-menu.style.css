@@ -9,3 +9,7 @@ mem-menu-content {
 mem-menu-content.menu-open {
   display:block;
 }
+
+mem-menu-content .trigger-button {
+    color: red;
+}

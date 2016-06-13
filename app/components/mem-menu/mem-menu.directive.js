@@ -8,12 +8,10 @@ angular.
       restrict: 'E',
       scope: {
         itemAction: '&',
-        text: '@'
+        text: '@',
+        type: '@'
       },
       transclude: true,
-        link: function(scope, element, attrs, tabsCtrl) {
-
-      },
       controller: ['$scope', function($scope, $elements, $attrs) {
         
         this.toggleMenu = function(event) {
