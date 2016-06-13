@@ -37,6 +37,3 @@ angular.
       controllerAs: 'ctrl'
     }
   });
-  
-  // route to different template per type setting
-  // 
