@@ -1,5 +1,5 @@
 <i ng-if="icon" class="material-icons menu-item__icon">{{ icon }}</i>
-<button class="menu-button" ng-class="{indented: icon}" ng-click="ctr.sampleAction(item.text, $event)">
+<button class="menu-button" ng-class="{'indented': icon || ctrl.isIndented() }" ng-click="ctr.sampleAction(item.text, $event)">
   <span>{{ text }}</span>
   <span ng-if="helperText">{{ helperText }}</span>
 </button>
