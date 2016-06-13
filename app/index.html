@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="components/my-button/my-button.style.css">
   <link rel="stylesheet" href="components/menu-item/menu-item.style.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -31,6 +30,13 @@
   
   <hr>
   
+  <mem-menu>
+     <button ng-click="$openMenu()">Let's Go</button>
+     <md-menu-content>
+       <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
+     </md-menu-content>
+  </mem-menu>
+  <hr>
   <mem-menu>
     <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
   </mem-menu>
