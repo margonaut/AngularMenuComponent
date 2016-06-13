@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="components/my-button/my-button.style.css">
   <link rel="stylesheet" href="components/menu-item/menu-item.style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -26,7 +28,7 @@
   <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
   <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
   <menu-item text="Save" ng-click="menu.genericAction()"></menu-item>
-  <menu-item text="Turn On" type="checkbox"></menu-item>
+  <menu-item text="Turn On" type="checkbox" ng-click="menu.checkboxAlert()"></menu-item>
 </div>
 
   <!-- In production use:

@@ -33,6 +33,10 @@ app.controller('MenuController', ['$scope', function($scope) {
     alert("This makes text bold");
   };
   
+  this.checkboxAlert = function() {
+    alert("This item's checkbox has changed")
+  };
+  
   this.genericAction = function() {
     alert("Generic Action to the rescue!")
   };

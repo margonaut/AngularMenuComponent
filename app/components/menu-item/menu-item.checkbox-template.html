@@ -1,1 +1,4 @@
-Dynamic template now working
+<button class="menu-button" ng-init="checked=true" ng-click="checked = !checked">
+  <span>{{ text }}</span>
+  <i ng-if="checked" class="menu-checkmark material-icons">done</i>
+</button>
