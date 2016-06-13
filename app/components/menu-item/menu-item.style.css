@@ -1,11 +1,11 @@
-
 menu-item {
   position: relative;
 }
+
 .menu-button {
   background-color: #FFFFFF;
-  /*height: 30px;*/
-  padding: 6px;
+  height: 35px;
+  padding: 0px 12px;
   border: 0px;
   width: 100%;
   display: flex;
@@ -16,11 +16,11 @@ menu-item {
   position: absolute;
   z-index: 10;
   top: 5px;
-  padding-left: 6px;
+  padding-left: 12px;
 }
 
 .menu-button.indented {
-  padding-left: 40px;
+  padding-left: 44px;
 }
 
 menu-item:hover .menu-button {
