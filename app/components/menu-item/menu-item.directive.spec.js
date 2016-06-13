@@ -19,9 +19,22 @@ describe('menuItem directive', function() {
     
   }))
   
-  describe('it should display the text attribue', function() {
-    // done();
-    expect(element).toBe(3);
+  describe('menuItem directive', function() {
+    
+    it("should be a menu-item element", function() {
+      
+      expect(element[0].tagName).toBe("MENU-ITEM");
+      
+    });
+
+    it("should have a single button child element for a simple menuItem", function() {
+      
+      var childElements = element.children();
+      
+      expect(childElements.length).toBe(1);
+      expect(childElements[0].tagName).toBe("BUTTON");
+            // expect(element.attr('text')).toBe("Bold");
+    })
   });
   
   // // Insert our HTML and compile the directive
