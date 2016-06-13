@@ -22,9 +22,7 @@ describe('menuItem directive', function() {
   describe('menuItem directive', function() {
     
     it("should be a menu-item element", function() {
-      
       expect(element[0].tagName).toBe("MENU-ITEM");
-      
     });
 
     it("should have a single button child element for a simple menuItem", function() {
@@ -33,8 +31,23 @@ describe('menuItem directive', function() {
       
       expect(childElements.length).toBe(1);
       expect(childElements[0].tagName).toBe("BUTTON");
-            // expect(element.attr('text')).toBe("Bold");
-    })
+    });
+    
+    it("should display the text attribute value in the button child", function() {
+      var childElements = element.children();
+      var button = childElements[0];
+
+      expect(button.textContent).toContain("Bold");
+      
+    });
+    
+    it("should display the helper-text attribute value in the button child", function() {
+      var childElements = element.children();
+      var button = childElements[0];
+
+      expect(button.textContent).toContain("Cmd+B");
+      
+    });
   });
   
   // // Insert our HTML and compile the directive
