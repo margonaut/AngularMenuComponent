@@ -27,6 +27,7 @@ menu-item:hover .menu-button {
   background-color: lightgray;
 }
 
-.menu-button.indented {
+.menu-button.icon-indented,
+menu-item.indented .menu-button {
   padding-left: 44px;
 }

@@ -19,16 +19,7 @@ angular.
        },
       controller: ['$scope', function($scope, $element, $attrs) {
         
-        // this.isIndented = function() {
-        //   return angular.element($element).hasClass('indented');
-        // 
-        //   // return $element.hasClass('indented');
-        // };
-        
-        // Seen in Material Design's execution
-        // The sample action function is defined in the directive controller
-        // it needs the click event and the title of the text...why?
-        // ng-click="ctr.sampleAction(item.text, $event)"
+
         
         // trying out selection action pattern
         $scope.selected = function($event, scope) {
