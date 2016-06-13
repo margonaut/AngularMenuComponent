@@ -36,9 +36,11 @@ mem-menu-content .trigger-button {
 }
 
 mem-menu-content .trigger-button:before {
-  content: ">";
+  content: "▸";
+  font-size: 23px;
   position: absolute;
   right: 12px;
+  top: -8px;
 }
 
 mem-menu-content .trigger-button:hover {
