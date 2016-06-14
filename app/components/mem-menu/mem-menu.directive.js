@@ -15,10 +15,29 @@ angular.
       transclude: true,
       controller: ['$scope', function($scope, $elements, $attrs) {
         
-        // this.menuOpen = $scope.menuOpen;
+        var menu = this
+
+        this.menuOpen = $scope.menuOpen;
         
         this.toggleMenu = function() {
-        this.menuOpen = !this.menuOpen;
+          this.menuOpen = !this.menuOpen;
+          if (this.menuOpen) {
+            document.addEventListener("click", this.listenForClick(menu), true)
+          } else {
+            
+          }
+        }
+        
+        this.menuOff = function() {
+          this.menuOpen = false;
+        }
+        
+        this.listenForClick = function(menu) {
+          // menu.menuOpen = !menu.menuOpen;
+          debugger;
+          // document.addEventListener("click", function(){
+          //   
+          // });
         }
         
       }],
