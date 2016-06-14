@@ -18,26 +18,8 @@ angular.
         this.menuOpen = $scope.menuOpen;
         
         this.toggleMenu = function() {
-          this.menuOpen = !this.menuOpen;
-          if (this.menuOpen) {
-            var thisMenuCtrl = this;
-            this.listenForClick(thisMenuCtrl);
-          } 
+        this.menuOpen = !this.menuOpen;
         }
-        
-        this.listenForClick = function(menu) {
-          document.addEventListener("click", function(){
-            // debugger;
-            menu.menuOpen = false;
-          });
-        }
-        // 
-        // this.stopListeningForClick = function() {
-        //   document.removeEventListener("click", function(){
-        //     // debugger;
-        //     // this.toggleMenu();
-        //   });
-        // }
         
       }],
       controllerAs: 'ctrl'
