@@ -1,3 +1,29 @@
 body {
   padding: 25px;
+  background-color: #c7c7c7;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.demo-panel {
+  margin-top: 40px;
+}
+
+.demo-panel__header {
+  background-color: #FFFFFF;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  padding: 20px;
+  min-height: 100px;
+}
+
+.demo-panel__footer {
+  background-color: whitesmoke;
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+  padding: 20px;
+  min-height: 100px;
 }
