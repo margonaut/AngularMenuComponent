@@ -20,15 +20,20 @@ angular.
         this.toggleMenu = function() {
           this.menuOpen = !this.menuOpen;
           if (this.menuOpen) {
-            var thisMenuCtrl = this;
-            this.listenForClick(thisMenuCtrl);
-          } 
+            document.addEventListener("click", )
+          } else {
+            
+          }
         }
         
-        this.listenForClick = function(menu) {
-          document.addEventListener("click", function(){
-            menu.menuOpen = false;
-          });
+        this.menuOff = function() {
+          this.menuOpen = false;
+        }
+        
+        // this.listenForClick = function(menu) {
+        //   document.addEventListener("click", function(){
+        //     menu.menuOpen = false;
+        //   });
         }
         
       }],
