@@ -22,9 +22,9 @@ angular.
         this.toggleMenu = function() {
           this.menuOpen = !this.menuOpen;
           if (this.menuOpen) {
-            document.addEventListener("click", this.listenForClick(menu), true)
+            // document.addEventListener("click", this.listenForClick(menu), true)
           } else {
-            document.removeEventListener("click", this.listenForClick(menu), true)
+            // document.removeEventListener("click", this.listenForClick(menu), true)
           }
         }
         
@@ -33,11 +33,11 @@ angular.
         }
         
         this.listenForClick = function(menu) {
-          menu.menuOpen = !menu.menuOpen;
-          debugger;
-          // document.addEventListener("click", function(){
+          // debugger;
+          document.addEventListener("click", function(){
+          // menu.menuOpen = !menu.menuOpen;
           //   
-          // });
+          });
         }
         
       }],
