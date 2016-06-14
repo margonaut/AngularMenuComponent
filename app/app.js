@@ -5,17 +5,15 @@ var app = angular.module('myApp', [
   'menuItem',
   'myMenu'
 ]).controller('MenuController', ['$scope', function($scope) {
+  
+  // set actions for your menu items in a controller scope
 
-  this.printPage = function(event) {
-    alert("This is the print event");
+  this.myAction = function(event) {
+    alert("This is a custom event");
   };
   
-  this.boldText = function(event) {
-    alert("This makes text bold");
-  };
-  
-  this.checkboxAlert = function() {
-    alert("This item's checkbox has changed")
+  this.customAction = function(event) {
+    alert("Custom actions for everybody");
   };
   
   this.genericAction = function() {
