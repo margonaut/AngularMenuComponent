@@ -14,8 +14,8 @@ mem-menu[type="dropdown"]:hover mem-menu-content {
 /************** MENU TRIGGER BUTTON ****************/
 
 .trigger-button {
-  background-color: whitesmoke;
-  border: 1px solid lightgrey;
+  background-color: #f5f5f5;
+  border: 1px solid #DADADA;
 }
 
 /************ MENU CONTENT WRAPPER ****************/
@@ -62,5 +62,5 @@ mem-menu-content .trigger-button:before {
 }
 
 mem-menu-content .trigger-button:hover {
-  background-color: lightgray;
+  background-color: #f5f5f5;
 }

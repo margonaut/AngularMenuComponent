@@ -24,7 +24,7 @@ button:focus {
 }
 
 menu-item:hover .menu-button {
-  background-color: lightgray;
+  background-color: #f5f5f5;
 }
 /*********** CONFIGURABLE OPTIONS STYLES******************/
 
