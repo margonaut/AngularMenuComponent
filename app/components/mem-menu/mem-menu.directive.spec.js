@@ -27,4 +27,18 @@ describe('memMenu directive', function() {
       expect(element[0].tagName).toBe("MEM-MENU");
     });
   });
+  
+  // describe('memMenu directive', function() {
+  //   
+  //   it("should have an initial value of closed", function() {
+  //     expect(scope.menuOpen).to
+  //     debugger;
+  //   });
+  // });
+  
+  // should be  closed by default
+  // shoul be open by default when set
+  // should generate a target button
+  // target button should display text
+  // should contain a menu-content
 });
