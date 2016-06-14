@@ -13,8 +13,10 @@ describe('menuItem directive', function() {
     scope = $rootScope.$new();
     
     element = '<menu-item text="Bold" helper-text="Cmd+B"></menu-item>';
+    iconElement = '<menu-item icon="refresh" text="Bold" helper-text="Cmd+B"></menu-item>';
     
     element = $compile(element)(scope);
+    iconElement = $compile(iconElement)(scope);
     scope.$digest();
     
   }))
@@ -27,26 +29,43 @@ describe('menuItem directive', function() {
 
     it("should have a single button child element for a simple menuItem", function() {
       
-      var childElements = element.children();
+      var itemChildren = element.children();
       
-      expect(childElements.length).toBe(1);
-      expect(childElements[0].tagName).toBe("BUTTON");
+      expect(itemChildren.length).toBe(1);
+      expect(itemChildren[0].tagName).toBe("BUTTON");
     });
-    
+  
     it("should display the text attribute value in the button child", function() {
-      var childElements = element.children();
-      var button = childElements[0];
+      var itemChildren = element.children();
+      var button = itemChildren[0];
 
       expect(button.textContent).toContain("Bold");
       
     });
     
     it("should display the helper-text attribute value in the button child", function() {
-      var childElements = element.children();
-      var button = childElements[0];
+      var itemChildren = element.children();
+      var button = itemChildren[0];
 
       expect(button.textContent).toContain("Cmd+B");
       
     });
+    
+    it("should display an icon if one is set", function() {
+      
+      var itemChildren = iconElement.children();
+      
+      expect(itemChildren.length).toBe(2);
+      
+      var icon = itemChildren[0];
+      
+      expect(icon.tagName).toBe("I");
+      expect(icon.className).toContain('material-icons', 'refresh');
+      
+    });
+    
+    // it should trigger a click action if one is set
+    // it should toggle on and off
+    
   });
 });
