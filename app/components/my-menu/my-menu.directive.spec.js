@@ -23,7 +23,7 @@ describe('Menu Directive', function() {
   describe('Menu Directive', function() {
     
     it("should be a my-menu element", function() {
-      expect(element[0].tagName).toBe("my-mENU");
+      expect(element[0].tagName).toBe("MY-MENU");
     });
   });
     
@@ -44,7 +44,7 @@ describe('Menu Directive', function() {
     });
     
     it("should generate a menu-content wrapper as the second child", function() {
-      expect(element.children()[1].tagName).toBe("my-mENU-CONTENT");
+      expect(element.children()[1].tagName).toBe("MY-MENU-CONTENT");
     });
     // 
     it("should contain any transcluded menu items within menu-content", function() {
