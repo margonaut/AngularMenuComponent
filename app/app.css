@@ -1,3 +1,8 @@
+
+/***********************************************/
+/**************** DEMO PAGE ********************/
+/***********************************************/
+
 body {
   padding: 25px;
   background-color: #4c7c8e;
@@ -8,24 +13,15 @@ body {
   margin: 0 auto;
 }
 
+/***************** FAKE BLOG  *******************/
+
+
 .demo1__bar {
   height: 50px;
   display: flex;
   background-color: #f5f5f5;
   align-items: center;
   padding: 0px 5px;
-}
-
-.bg-white {
-  background-color: #FFFFFF;
-}
-
-.margin-top-20 {
-  margin-top: 20px;
-}
-
-.margin-right-20 {
-  margin-right: 20px;
 }
 
 .demo1__icon {
@@ -47,6 +43,9 @@ body {
   font-weight: 100;
 }
 
+/************ HORIZONTAL DEMO PANEL  ***************/
+
+
 .demo-panel {
   margin-top: 40px;
 }
@@ -66,6 +65,9 @@ body {
   padding: 20px 40px;
   min-height: 100px;
 }
+
+/************** VERTICAL DEMO PANEL  **************/
+
 
 .panel-wrapper {
   margin-top: 40px;
@@ -93,7 +95,8 @@ body {
   /*min-height: 100px;*/
 }
 
-/* Table styles */
+/***************** CONFIG TABLE *******************/
+
 
 .config-table {
   width: 100%;
@@ -116,7 +119,8 @@ body {
   width: 30%;
 }
 
-/* Menu Item Demo Box */
+/**************** MENU ITEM DEMO *********************/
+
 
 .menu-item-container {
   border: 6px solid #4c7c8e;
@@ -125,6 +129,9 @@ body {
   margin: 0 auto;
 }
 
+/**************** BOX SIZING FIX *******************/
+
+
 html {
   box-sizing: border-box;
 }
@@ -132,5 +139,17 @@ html {
   box-sizing: inherit;
 }
 
-/* Utility classes */
+/**************** UTILITY CLASSES *******************/
 
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
+}
