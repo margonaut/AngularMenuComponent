@@ -13,7 +13,7 @@ module.exports = function(config) {
       '!(bower_components)/**/*!(.module|.spec).js',
       '**/*.spec.js',
       'components/**/*.js',
-      'components/**/*.template.html'
+      'components/**/*.template.html',
       'components/**/*.html'
     ],
 
