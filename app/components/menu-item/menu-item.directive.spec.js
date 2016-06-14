@@ -3,8 +3,7 @@
 describe('menuItem directive', function() {
   var element, scope;
   
-  // Load the wrapper module that contains the menuItem directive
-  beforeEach(module('menuItem'));
+    beforeEach(module('menuItem'));
   
   beforeEach(module('templates'));
 
@@ -83,13 +82,6 @@ describe('menuItem directive', function() {
       expect(button.childElementCount).toBe(1);
       
     });
-    
-    // it("should test controller", function() {
-    //   
-    //   expect(scope.test).toBe(true)
-    //   
-    // });
-    
-    // it should trigger a click action if one is set - how to do this in angular
+
   });
 });
