@@ -17,6 +17,11 @@ menu-item {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 
 button:focus {
