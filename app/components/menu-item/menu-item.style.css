@@ -1,13 +1,13 @@
+
+/*****************************************************/
+/************ MENU ITEM DIRECTIVE STYLES**************/
+/*****************************************************/
+
 menu-item {
   position: relative;
 }
 
-.menu-item__icon {
-  position: absolute;
-  z-index: 10;
-  top: 5px;
-  padding-left: 12px;
-}
+/**************** MENU BUTTON *************************/
 
 .menu-button {
   background-color: #FFFFFF;
@@ -19,7 +19,6 @@ menu-item {
   justify-content: space-between;
 }
 
-
 button:focus {
   outline: 0;
 }
@@ -27,12 +26,24 @@ button:focus {
 menu-item:hover .menu-button {
   background-color: lightgray;
 }
+/*********** CONFIGURABLE OPTIONS STYLES******************/
 
+/* Menu with icon */
+ 
+.menu-item__icon {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  padding-left: 12px;
+}
+
+/* Indented menu item */
 .menu-button.icon-indented,
 menu-item.indented .menu-button {
   padding-left: 44px;
 }
 
+/* Disabled menu item */
 menu-item[disabled] {
   color: lightgrey; 
   cursor: default;
@@ -42,6 +53,9 @@ menu-item[disabled] {
 menu-item[disabled]:hover .menu-button {
   background-color: #FFFFFF;
 }
+
+
+
 
 
 
