@@ -15,11 +15,16 @@ angular.
       transclude: true,
       controller: ['$scope', function($scope, $elements, $attrs) {
         
+        
+        
         this.menuOpen = $scope.menuOpen;
         
         this.toggleMenu = function() {
-        this.menuOpen = !this.menuOpen;
+          if(!$scope.type) {
+            this.menuOpen = !this.menuOpen;
+          }
         }
+
         
       }],
       controllerAs: 'ctrl'
