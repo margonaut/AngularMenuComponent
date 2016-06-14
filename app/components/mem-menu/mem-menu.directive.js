@@ -9,10 +9,13 @@ angular.
       scope: {
         itemAction: '&',
         text: '@',
-        type: '@'
+        type: '@',
+        menuOpen: '@'
       },
       transclude: true,
       controller: ['$scope', function($scope, $elements, $attrs) {
+        
+        this.menuOpen = $scope.menuOpen;
         
         this.toggleMenu = function() {
         this.menuOpen = !this.menuOpen;

@@ -15,6 +15,7 @@ mem-menu-content {
 mem-menu-content[menu-open="true"] {
   display:block;
   z-index: 1000;
+  left: 0;
 }
 
 .trigger-button {
