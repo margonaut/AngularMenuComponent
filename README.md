@@ -1,4 +1,1 @@
-#Menu Directive
-
-## Contains several buttons variants
-
+Angular app, fire it up and visit the demo page.
