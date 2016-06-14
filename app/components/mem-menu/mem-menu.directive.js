@@ -24,7 +24,7 @@ angular.
           if (this.menuOpen) {
             document.addEventListener("click", this.listenForClick(menu), true)
           } else {
-            
+            document.removeEventListener("click", this.listenForClick(menu), true)
           }
         }
         
@@ -33,7 +33,7 @@ angular.
         }
         
         this.listenForClick = function(menu) {
-          // menu.menuOpen = !menu.menuOpen;
+          menu.menuOpen = !menu.menuOpen;
           debugger;
           // document.addEventListener("click", function(){
           //   
