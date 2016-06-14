@@ -78,7 +78,6 @@
           </div>
         </div>
         <div class="panel-right">
-          Menu Directive
           <p>
             These menus consist of two composable directives, Menus and Menu Items. The menu directive generates the 
             container structure and controls the visibility of the dropdown content. They take a custom title, can
@@ -106,6 +105,24 @@
           <p>
             Menu Items can be used independent of Menus. They conform to their containing element and accept all the same attributes.
           </p>
+          <p>
+            Menus and Menu Items are styled fairly unopinionatedly. They will adapt to inherited text styles.
+          </p>
+        </div>
+      </div>
+      
+      <div class="demo-panel">
+        <div class="demo-panel__header">
+          <code style="font-size: 13.5px; line-height: 2em;">
+            &lt;mem-menu text="My Mini Blog"&gt;      <br />
+              &lt;menu-item text="Bold" helper-text="Cmd+B" ng-click="ctrl.myAction()" class="indented"&gt;&lt;/menu-item&gt; <br />
+              &lt;menu-item text="Print" helper-text="Cmd+P" ng-click="ctrl.doThing()" icon="account_circle"&gt;&lt;/menu-item&gt; <br />
+            &lt;/mem-menu&gt; <br />
+          </code>
+          
+        </div>
+        <div class="demo-panel__footer">
+          <h3>Simple Menu Code Composition</h3>
         </div>
       </div>
       

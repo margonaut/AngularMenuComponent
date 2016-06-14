@@ -11,7 +11,6 @@ body {
 .demo1__bar {
   height: 50px;
   display: flex;
-  color: #000;
   background-color: #f5f5f5;
   align-items: center;
   padding: 0px 5px;
@@ -55,7 +54,7 @@ body {
   background-color: #FFFFFF;
   border-top-left-radius: 10px; 
   border-top-right-radius: 10px; 
-  padding: 20px;
+  padding: 40px;
   min-height: 100px;
 }
 
@@ -63,7 +62,7 @@ body {
   background-color: whitesmoke;
   border-bottom-left-radius: 10px; 
   border-bottom-right-radius: 10px; 
-  padding: 20px;
+  padding: 20px 40px;
   min-height: 100px;
 }
 
@@ -100,7 +99,6 @@ body {
 }
 
 .config-table tr {
-  width:
   border-top: 1px solid lightgray;
 }
 
@@ -113,7 +111,7 @@ body {
 }
 
 .config-text {
-  font-weight: bold;
+  font-family: monospace;
   width: 30%;
 }
 
