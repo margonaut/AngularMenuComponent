@@ -1,4 +1,4 @@
 <button class="trigger-button" ng-init="ctrl.menuOpen ? true : false" ng-click='ctrl.toggleMenu()'>{{ text }}</button>
-<mem-menu-content menu-open="{{ ctrl.menuOpen }}">
+<mem-menu-content menu-open="{{ ctrl.menuOpen }}" ng-click='ctrl.toggleMenu()'>
 <ng-transclude></ng-transclude>
 </mem-menu-content>
