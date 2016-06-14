@@ -46,6 +46,7 @@
             </mem-menu>
             
             <mem-menu text="Post Categories">     
+              <menu-item text="Enable Categories" type="checkbox"></menu-item>
               <menu-item text="Public" helper-text="post-pub"></menu-item>
               <menu-item text="Private" helper-text="post-prv" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
               <menu-item text="Promoted" helper-text="post-prm" ng-click="menu.printPage($event)"></menu-item>
@@ -53,18 +54,21 @@
                 <menu-item class="indented" text="My Music" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item class="indented" text="Opinion"  ng-click="menu.printPage($event)"></menu-item>
                 <menu-item class="indented" text="Creative Writing" ng-click="menu.printPage($event)"></menu-item>
-                <menu-item  text="Other" ng-click="menu.printPage($event)"></menu-item>
+                <menu-item  text="Other" icon="help_outline" ng-click="menu.printPage($event)"></menu-item>
               </mem-menu>
               <menu-item text="Add Custom Category" ng-click="menu.printPage($event)"></menu-item>
             </mem-menu>
             
-            <mem-menu text="Followers">
-              <menu-item text="Turn On" type="checkbox"></menu-item>
-              <menu-item text="Turn On" type="checkbox"></menu-item>
+            <mem-menu menu-open="true" text="Followers">
+              <menu-item text="Followers List" icon="star"></menu-item>
+              <menu-item text="Unfollow" class="indented"></menu-item>
+              <menu-item text="Block" class="indented"></menu-item>
             </mem-menu>
           </div>
           <div class="demo1__textinput">
-            blog post textdump
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+              unknown printer took a galley of type and scrambled it to make a type specimen book.
           </div>
           <div class="demobar1__bar bg-white margin-top-20">
             <mem-menu text="Post Tags" class="margin-right-20">     
@@ -72,18 +76,19 @@
               <menu-item text="My Travels" type="checkbox"></menu-item>
               <menu-item text="Music" type="checkbox"></menu-item>
               <menu-item text="Rant Blogs" type="checkbox"></menu-item>
-              <menu-item text="Motorcyles" type="checkbox"></menu-item>
+              <menu-item text="My Fam" type="checkbox"></menu-item>
             </mem-menu>
             
-            <mem-menu menu-open="true" text="Post Mood" class="margin-right-20">     
-              <menu-item text="Turn On" type="checkbox"></menu-item>
-              <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-              <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
+            <mem-menu text="Post Mood" class="margin-right-20">     
+              <menu-item text="Happy" icon="face" helper-text=":-D"></menu-item>
+              <menu-item text="Sad" helper-text=":-(" icon="face" ng-click="menu.boldText($event)"></menu-item>
+              <menu-item text="Angry" helper-text=">:-(" icon="face" ng-click="menu.printPage($event)"></menu-item>
+              <menu-item text="Motorcycle" helper-text="vroom" icon="motorcycle" ng-click="menu.printPage($event)"></menu-item>
             </mem-menu>
             
             <mem-menu text="Publish Post">
-              <menu-item text="Turn On" type="checkbox"></menu-item>
-              <menu-item text="Turn On" type="checkbox"></menu-item>
+              <menu-item text="Publish Publicly"></menu-item>
+              <menu-item text="Publish Privately"></menu-item>
             </mem-menu>
           </div>
         </div>
@@ -103,12 +108,14 @@
       <div class="panel-wrapper">
         <div class="panel-left">
           <div class="menu-item-container">
-            <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-            <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-            <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-            <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-            <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
-            <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
+            <menu-item text="Happy" icon="face" helper-text=":-D"></menu-item>
+            <menu-item text="Sad" helper-text=":-(" icon="face" ng-click="menu.boldText($event)"></menu-item>
+            <menu-item text="Angry" helper-text=">:-(" icon="face" ng-click="menu.printPage($event)"></menu-item>
+            <menu-item text="Silly" helper-text=":p" icon="face" ng-click="menu.printPage($event)"></menu-item>
+            <menu-item text="Shocked" helper-text=":-O" icon="face" ng-click="menu.printPage($event)"></menu-item>
+            <menu-item text="Bored" helper-text=":-|" icon="face" ng-click="menu.printPage($event)"></menu-item>
+            <menu-item text="Crying" helper-text=":'('" icon="face" ng-click="menu.printPage($event)"></menu-item>
+            <menu-item text="Motorcycle" helper-text="vroom" icon="motorcycle" ng-click="menu.printPage($event)"></menu-item>
           </div>
         </div>
         <div class="panel-right">
