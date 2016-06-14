@@ -1,10 +1,10 @@
 'use strict';
 
 angular.
-  module('memMenu').
-  directive('memMenu', function() {
+  module('myMenu').
+  directive('myMenu', function() {
     return {
-      templateUrl: 'components/mem-menu/mem-menu.template.html',
+      templateUrl: 'components/my-menu/my-menu.template.html',
       restrict: 'E',
       scope: {
         itemAction: '&',

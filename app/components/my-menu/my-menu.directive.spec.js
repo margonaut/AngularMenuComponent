@@ -3,7 +3,7 @@ describe('Menu Directive', function() {
   var element, scope;
   
   // Load the wrapper module that contains the menuItem directive
-  beforeEach(module('memMenu'));
+  beforeEach(module('myMenu'));
   
   beforeEach(module('templates'));
 
@@ -11,8 +11,8 @@ describe('Menu Directive', function() {
   beforeEach(inject(function($rootScope, $compile) {
     scope = $rootScope.$new();
     
-    element = '<mem-menu text="Flamingos"><menu-item text="Bold" helper-text="Cmd+B"></menu-item></mem-menu>';
-    openMenu = '<mem-menu menu-open=true text="Flamingos"><menu-item text="Bold" helper-text="Cmd+B"></menu-item></mem-menu>';
+    element = '<my-menu text="Flamingos"><menu-item text="Bold" helper-text="Cmd+B"></menu-item></my-menu>';
+    openMenu = '<my-menu menu-open=true text="Flamingos"><menu-item text="Bold" helper-text="Cmd+B"></menu-item></my-menu>';
     
     element = $compile(element)(scope);
     openMenu = $compile(openMenu)(scope);
@@ -22,8 +22,8 @@ describe('Menu Directive', function() {
   
   describe('Menu Directive', function() {
     
-    it("should be a mem-menu element", function() {
-      expect(element[0].tagName).toBe("MEM-MENU");
+    it("should be a my-menu element", function() {
+      expect(element[0].tagName).toBe("my-mENU");
     });
   });
     
@@ -44,7 +44,7 @@ describe('Menu Directive', function() {
     });
     
     it("should generate a menu-content wrapper as the second child", function() {
-      expect(element.children()[1].tagName).toBe("MEM-MENU-CONTENT");
+      expect(element.children()[1].tagName).toBe("my-mENU-CONTENT");
     });
     // 
     it("should contain any transcluded menu items within menu-content", function() {
@@ -60,7 +60,7 @@ describe('Menu Directive', function() {
     
     it("should be closed by default", function() {
       var button = element.find('button');
-      var menuContent = element.find('mem-menu-content');
+      var menuContent = element.find('my-menu-content');
       
       expect(menuContent.attr('menu-open')).toBe('')
       
@@ -68,7 +68,7 @@ describe('Menu Directive', function() {
     
     it("should open and close when clicked", function() {
       var button = element.children()[0];
-      var menuContent = element.find('mem-menu-content');
+      var menuContent = element.find('my-menu-content');
       
       expect(menuContent.attr('menu-open')).toBe('')
       
@@ -83,7 +83,7 @@ describe('Menu Directive', function() {
     
     it("should be closed by open on default when specified", function() {
       var button = openMenu.find('button');
-      var menuContent = openMenu.find('mem-menu-content');
+      var menuContent = openMenu.find('my-menu-content');
       
       expect(menuContent.attr('menu-open')).toBe('true')
       

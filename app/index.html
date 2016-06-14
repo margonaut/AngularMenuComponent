@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="components/menu-item/menu-item.style.css">
-  <link rel="stylesheet" href="components/mem-menu/mem-menu.style.css">
+  <link rel="stylesheet" href="components/my-menu/my-menu.style.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -27,43 +27,43 @@
           <div class="demo1__bar">
             <i class="material-icons demo1__icon">account_circle</i>
             <!-- <span class="demo1__title"></span> -->
-            <mem-menu text="My Mini Blog">     
+            <my-menu text="My Mini Blog">     
               <!-- <menu-item text="Turn On" type="checkbox"></menu-item> -->
               <menu-item text="New Post" helper-text="⌘+N" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
               <menu-item text="Post Archive" ng-click="menu.printPage($event)"></menu-item>
-              <mem-menu text="Add Media" type="dropdown">
+              <my-menu text="Add Media" type="dropdown">
                 <menu-item text="Add a photo" icon="add_a_photo" ng-click="menu.boldText($event)"></menu-item>
                 <menu-item text="Add a video" icon="theaters" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item text="Add a song" icon="audiotrack" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item text="Upload other filetype..." class="indented" ng-click="menu.printPage($event)"></menu-item>
-              </mem-menu>
-              <mem-menu text="Blog Settings" type="dropdown">
+              </my-menu>
+              <my-menu text="Blog Settings" type="dropdown">
                 <menu-item text="Updates" icon="build" helper-text="⌘+U" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item text="Privacy" icon="lock_outline" helper-text="⌘+P" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item text="Activity History" icon="event" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item text="Traffic Stats" icon="assessment" ng-click="menu.printPage($event)"></menu-item>
-              </mem-menu>
-            </mem-menu>
+              </my-menu>
+            </my-menu>
             
-            <mem-menu text="Post Categories">     
+            <my-menu text="Post Categories">     
               <menu-item text="Enable Categories" type="checkbox"></menu-item>
               <menu-item text="Public" helper-text="post-pub"></menu-item>
               <menu-item text="Private" helper-text="post-prv" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
               <menu-item text="Promoted" helper-text="post-prm" ng-click="menu.printPage($event)"></menu-item>
-              <mem-menu text="Custom Categories" type="dropdown">
+              <my-menu text="Custom Categories" type="dropdown">
                 <menu-item class="indented" text="My Music" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item class="indented" text="Opinion"  ng-click="menu.printPage($event)"></menu-item>
                 <menu-item class="indented" text="Creative Writing" ng-click="menu.printPage($event)"></menu-item>
                 <menu-item  text="Other" icon="help_outline" ng-click="menu.printPage($event)"></menu-item>
-              </mem-menu>
+              </my-menu>
               <menu-item text="Add Custom Category" ng-click="menu.printPage($event)"></menu-item>
-            </mem-menu>
+            </my-menu>
             
-            <mem-menu menu-open="true" text="Followers">
+            <my-menu menu-open="true" text="Followers">
               <menu-item text="Followers List" icon="star"></menu-item>
               <menu-item text="Unfollow" class="indented"></menu-item>
               <menu-item text="Block" class="indented"></menu-item>
-            </mem-menu>
+            </my-menu>
           </div>
           <div class="demo1__textinput">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -71,25 +71,25 @@
               unknown printer took a galley of type and scrambled it to make a type specimen book.
           </div>
           <div class="demobar1__bar bg-white margin-top-20">
-            <mem-menu text="Post Tags" class="margin-right-20">     
+            <my-menu text="Post Tags" class="margin-right-20">     
               <menu-item text="Enable Tags" type="checkbox"></menu-item>
               <menu-item text="My Travels" type="checkbox"></menu-item>
               <menu-item text="Music" type="checkbox"></menu-item>
               <menu-item text="Rant Blogs" type="checkbox"></menu-item>
               <menu-item text="My Fam" type="checkbox"></menu-item>
-            </mem-menu>
+            </my-menu>
             
-            <mem-menu text="Post Mood" class="margin-right-20">     
+            <my-menu text="Post Mood" class="margin-right-20">     
               <menu-item text="Happy" icon="face" helper-text=":-D"></menu-item>
               <menu-item text="Sad" helper-text=":-(" icon="face" ng-click="menu.boldText($event)"></menu-item>
               <menu-item text="Angry" helper-text=">:-(" icon="face" ng-click="menu.printPage($event)"></menu-item>
               <menu-item text="Motorcycle" helper-text="vroom" icon="motorcycle" ng-click="menu.printPage($event)"></menu-item>
-            </mem-menu>
+            </my-menu>
             
-            <mem-menu text="Publish Post">
+            <my-menu text="Publish Post">
               <menu-item text="Publish Publicly"></menu-item>
               <menu-item text="Publish Privately"></menu-item>
-            </mem-menu>
+            </my-menu>
           </div>
         </div>
         <div class="panel-right">
@@ -131,10 +131,10 @@
       <div class="demo-panel">
         <div class="demo-panel__header">
           <code style="font-size: 13.5px; line-height: 2em;">
-            &lt;mem-menu text="My Mini Blog"&gt;      <br />
+            &lt;my-menu text="My Mini Blog"&gt;      <br />
               &lt;menu-item text="Bold" helper-text="Cmd+B" ng-click="ctrl.myAction()" class="indented"&gt;&lt;/menu-item&gt; <br />
               &lt;menu-item text="Print" helper-text="Cmd+P" ng-click="ctrl.doThing()" icon="account_circle"&gt;&lt;/menu-item&gt; <br />
-            &lt;/mem-menu&gt; <br />
+            &lt;/my-menu&gt; <br />
           </code>
           
         </div>
@@ -174,38 +174,38 @@
             </table>
             
             
-            <!-- <mem-menu text="Custom Title">     
+            <!-- <my-menu text="Custom Title">     
                  <menu-item text="Turn On" type="checkbox"></menu-item>
                  <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
                  <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-                 <mem-menu text="Dropdown example" type="dropdown">
+                 <my-menu text="Dropdown example" type="dropdown">
                       <menu-item class="indented" text="A different Option" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
                       <menu-item text="Again" icon="autorenew" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                       <menu-item class="indented" text="Again" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-                 </mem-menu>
-                 <mem-menu text="Dropdown example" type="dropdown">
+                 </my-menu>
+                 <my-menu text="Dropdown example" type="dropdown">
                    <menu-item text="Issues" icon="build" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                    <menu-item text="Assign Jobs" icon="assignment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                    <menu-item text="Current Jobs" icon="event" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                    <menu-item text="Job History" icon="assessment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-                 </mem-menu>
-            </mem-menu>
+                 </my-menu>
+            </my-menu>
             
-            <mem-menu menu-open=true text="Custom Title">     
+            <my-menu menu-open=true text="Custom Title">     
                  <menu-item text="Bold" helper-text="Cmd+B" ng-click="menu.boldText($event)" item-action="menu.boldText($event)"></menu-item>
                  <menu-item text="Print" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-                 <mem-menu text="Dropdown example" type="dropdown">
+                 <my-menu text="Dropdown example" type="dropdown">
                       <menu-item class="indented" text="A different Option" helper-text="Cmd+B" ng-click="menu.boldText($event)"></menu-item>
                       <menu-item text="Again" icon="autorenew" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                       <menu-item class="indented" text="Again" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-                 </mem-menu>
-                 <mem-menu text="Dropdown example" type="dropdown">
+                 </my-menu>
+                 <my-menu text="Dropdown example" type="dropdown">
                    <menu-item text="Issues" icon="build" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                    <menu-item text="Assign Jobs" icon="assignment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                    <menu-item text="Current Jobs" icon="event" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
                    <menu-item text="Job History" icon="assessment" helper-text="Cmd+P" ng-click="menu.printPage($event)"></menu-item>
-                 </mem-menu>
-            </mem-menu> -->
+                 </my-menu>
+            </my-menu> -->
             
           </div>
           <div class="demo-panel__footer">
@@ -256,8 +256,8 @@
   <script src="app.js"></script>
   <script src="components/menu-item/menu-item.module.js"></script>
   <script src="components/menu-item/menu-item.directive.js"></script>
-  <script src="components/mem-menu/mem-menu.module.js"></script>
-  <script src="components/mem-menu/mem-menu.directive.js"></script>
+  <script src="components/my-menu/my-menu.module.js"></script>
+  <script src="components/my-menu/my-menu.directive.js"></script>
   
 </body>
 </html>

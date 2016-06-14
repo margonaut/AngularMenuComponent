@@ -3,7 +3,7 @@
 // Declare app level module which depends on views, and components
 var app = angular.module('myApp', [
   'menuItem',
-  'memMenu'
+  'myMenu'
 ]).controller('MenuController', ['$scope', function($scope) {
 
   this.printPage = function(event) {

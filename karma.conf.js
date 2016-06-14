@@ -39,7 +39,7 @@ module.exports = function(config) {
     preprocessors: {
       "**/*.html": ["ng-html2js"]
       // "components/menu-item/menu-item.template.html": ["ng-html2js"]
-      // "components/mem-menu/mem-menu.template.html": ["ng-html2js"]
+      // "components/my-menu/my-menu.template.html": ["ng-html2js"]
     },
 
     ngHtml2JsPreprocessor: {
