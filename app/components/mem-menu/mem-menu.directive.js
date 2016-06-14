@@ -18,7 +18,17 @@ angular.
         this.menuOpen = $scope.menuOpen;
         
         this.toggleMenu = function() {
-        this.menuOpen = !this.menuOpen;
+          this.menuOpen = !this.menuOpen;
+          if (this.menuOpen) {
+            var thisMenuCtrl = this;
+            this.listenForClick(thisMenuCtrl);
+          } 
+        }
+        
+        this.listenForClick = function(menu) {
+          document.addEventListener("click", function(){
+            menu.menuOpen = false;
+          });
         }
         
       }],
