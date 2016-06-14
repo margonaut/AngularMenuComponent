@@ -1,4 +1,4 @@
-<button class="trigger-button" ng-class="true ? 'class-one' : 'class-2'" ng-click='ctrl.toggleMenu($event)'>{{ text }}</button>
-<mem-menu-content>
+<button class="trigger-button" ng-click='ctrl.menuOpen = !ctrl.menuOpen'>{{ text }}</button>
+<mem-menu-content menu-open="{{ ctrl.menuOpen }}">
 <ng-transclude></ng-transclude>
 </mem-menu-content>

@@ -12,7 +12,7 @@ mem-menu-content {
   position: absolute;
 }
 
-mem-menu-content.menu-open {
+mem-menu-content[menu-open="true"] {
   display:block;
   z-index: 1000;
 }
@@ -53,4 +53,8 @@ mem-menu-content mem-menu-content {
   position: absolute;
   left: 301px;
   top: -8px;
+}
+
+mem-menu[type="dropdown"]:hover mem-menu-content {
+  display:block;
 }

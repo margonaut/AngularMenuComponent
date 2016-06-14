@@ -14,14 +14,9 @@ angular.
       transclude: true,
       controller: ['$scope', function($scope, $elements, $attrs) {
         
-        this.toggleMenu = function(event) {
-          var menu = findMenu(event);          
-          menu.classList.toggle('menu-open')
+        this.toggleMenu = function() {
+        this.menuOpen = !this.menuOpen;
         }
-        
-        var findMenu = function(event) {
-          return event.target.nextElementSibling;
-        };
         
       }],
       controllerAs: 'ctrl'
