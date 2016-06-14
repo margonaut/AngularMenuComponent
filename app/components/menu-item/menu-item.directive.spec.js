@@ -13,11 +13,14 @@ describe('menuItem directive', function() {
     scope = $rootScope.$new();
     
     element = '<menu-item text="Bold" helper-text="Cmd+B"></menu-item>';
-    iconElement = '<menu-item icon="refresh" text="Bold" helper-text="Cmd+B"></menu-item>';
+    iconItem = '<menu-item icon="refresh" text="Bold" helper-text="Cmd+B"></menu-item>';
+    toggleItem = '<menu-item type="checkbox" text="Bold" helper-text="Cmd+B"></menu-item>';
     
     element = $compile(element)(scope);
-    iconElement = $compile(iconElement)(scope);
+    iconItem = $compile(iconItem)(scope);
+    toggleItem = $compile(toggleItem)(scope);
     scope.$digest();
+    controller = element.controller;
     
   }))
   
@@ -53,7 +56,7 @@ describe('menuItem directive', function() {
     
     it("should display an icon if one is set", function() {
       
-      var itemChildren = iconElement.children();
+      var itemChildren = iconItem.children();
       
       expect(itemChildren.length).toBe(2);
       
@@ -64,8 +67,29 @@ describe('menuItem directive', function() {
       
     });
     
-    // it should trigger a click action if one is set
-    // it should toggle on and off
+    it("should toggle checkbox type menu items on and off", function() {
+      
+      var item = toggleItem;
+      var button = item.children(0)[0];
+      
+      // Expect to contain the checkmark
+      expect(item[0].childElementCount).toBe(1);
+      expect(button.childElementCount).toBe(2);
+      expect(button.children[1].className).toContain('menu-checkmark', 'material-icons');
+      
+      button.click()
+      
+      // Expect to lose the checkmark after click event
+      expect(button.childElementCount).toBe(1);
+      
+    });
     
+    // it("should test controller", function() {
+    //   
+    //   expect(scope.test).toBe(true)
+    //   
+    // });
+    
+    // it should trigger a click action if one is set - how to do this in angular
   });
 });
