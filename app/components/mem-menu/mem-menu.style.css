@@ -1,6 +1,24 @@
+
+/*****************************************************/
+/************ MENU DIRECTIVE STYLES** ****************/
+/*****************************************************/
+
 mem-menu {
   position: relative;
 }
+
+mem-menu[type="dropdown"]:hover mem-menu-content {
+  display:block;
+}
+
+/************** MENU TRIGGER BUTTON ****************/
+
+.trigger-button {
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+}
+
+/************ MENU CONTENT WRAPPER ****************/
 
 mem-menu-content {
   display: none;
@@ -18,16 +36,13 @@ mem-menu-content[menu-open="true"] {
   left: 0;
 }
 
-.trigger-button {
-  background-color: whitesmoke;
-  border: 1px solid lightgrey;
-}
+/************ NESTED DROPDOWN STYLES ****************/
 
-/*.menu-bar {
-  background-color: cadetblue;
-  border: 2px solid cadetblue;
-  height: 40px;
-}*/
+mem-menu-content mem-menu-content {
+  position: absolute;
+  left: 301px;
+  top: -8px;
+}
 
 mem-menu-content .trigger-button {
   background: #FFFFFF;
@@ -48,14 +63,4 @@ mem-menu-content .trigger-button:before {
 
 mem-menu-content .trigger-button:hover {
   background-color: lightgray;
-}
-
-mem-menu-content mem-menu-content {
-  position: absolute;
-  left: 301px;
-  top: -8px;
-}
-
-mem-menu[type="dropdown"]:hover mem-menu-content {
-  display:block;
 }
