@@ -1,6 +1,6 @@
 # Angular Menu Directive
 
-### Setup
+### Demo Setup
 ```sh
 npm start
 ```
